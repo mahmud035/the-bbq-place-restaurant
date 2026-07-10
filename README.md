@@ -7,6 +7,7 @@ A responsive multi-page restaurant website template built to practice CSS layout
 ## What this demonstrates
 
 - **Multi-page Architecture**: Developed a cohesive navigation structure across Home, About, Menu, and Contact pages with mobile-optimized state management.
+- **Full-screen video background**: The home hero uses a muted, autoplaying, looping background video (`media/video/home-bg-video.mkv`) with overlaid content.
 - **Responsive Navigation**: Implemented a consistent hamburger menu pattern using vanilla JavaScript to handle mobile state toggling across all pages.
 - **Structured Content Layouts**: Utilized CSS Grid and Flexbox for modular design, specifically for menu item displays, testimonial cards, and featured delicacies.
 - **Design System**: Implemented maintainable theming using CSS custom properties for color palettes and font stacks.
@@ -27,10 +28,29 @@ The current desktop-first approach using `max-width` breakpoints made managing r
 
 ## Technologies Used
 
-- **HTML5**
-- **CSS3** (Flexbox, Grid)
+- **HTML5** (including the `<video>` element for the hero background)
+- **CSS3** (Flexbox, Grid, CSS Custom Properties)
 - **JavaScript** (Vanilla)
-- **Dependencies**: Font Awesome 6.1.1
+- **Fonts**: Google Fonts — Abril Fatface (display) & Poppins
+- **Icons**: Font Awesome 6.1.1
+
+## Pages & structure
+
+```
+the-bbq-place-restaurant/
+├── index.html      # home — video hero, featured delicacies, testimonials
+├── about.html      # about the restaurant
+├── menu.html       # menu listing
+├── contact.html    # contact page
+├── css/
+│   ├── style.css        # core layout & theming
+│   └── media-query.css  # responsive overrides (desktop-first, 1280px → 576px)
+├── js/
+│   └── script.js   # mobile hamburger-nav toggle
+└── media/
+    └── video/
+        └── home-bg-video.mkv   # hero background video
+```
 
 ## Getting Started
 
