@@ -1,35 +1,46 @@
 # The-BBQ-Place-Restaurant
 
-<h2>👉 <a href="https://the-bbq-place-restaurant-website.netlify.app/">Live Website</a></h2>
+## 👉 [Live Website](https://the-bbq-place-restaurant-website.netlify.app/)
 
-## Description
+A responsive multi-page restaurant website template built to practice CSS layout fundamentals, multi-page navigation, and mobile-responsive design patterns without a framework.
 
-This repository contains the code for a responsive BBQ restaurant website, designed to showcase the restaurant's menu, services, location, and customer testimonials. The website is built with HTML, CSS, and JavaScript to ensure a seamless experience across all devices.
+## What this demonstrates
 
-## Features
+- **Multi-page Architecture**: Developed a cohesive navigation structure across Home, About, Menu, and Contact pages with mobile-optimized state management.
+- **Responsive Navigation**: Implemented a consistent hamburger menu pattern using vanilla JavaScript to handle mobile state toggling across all pages.
+- **Structured Content Layouts**: Utilized CSS Grid and Flexbox for modular design, specifically for menu item displays, testimonial cards, and featured delicacies.
+- **Design System**: Implemented maintainable theming using CSS custom properties for color palettes and font stacks.
+- **UX Enhancements**: Integrated responsive media queries (desktop-first) ranging from 1280px down to 576px.
+- **Semantic Structure**: Built with semantic HTML5 and external icons via Font Awesome 6.1.1.
 
-- **Responsive Design**: Adapts to various screen sizes and devices, from desktops to mobile phones.
-- **Navigation Bar**: Easy access to different sections including Home, Menu, About Us, Reviews, and Contact.
-- **Image Gallery**: Display mouth-watering images of BBQ dishes.
-- **Menu Display**: Presents the restaurant’s full menu with descriptions and prices.
-- **Contact Form**: Enables customers to send inquiries directly through the website.
-- **Social Media Links**: Connects visitors to the restaurant's social media profiles.
+## Build/design decisions
+
+| Decision | Reasoning |
+| :--- | :--- |
+| **Desktop-first CSS** | Structured initially for large screens with `max-width` breakpoint overrides in `media-query.css` for tablet and mobile responsiveness. |
+| **Vanilla JS** | Used for navigation toggling to practice DOM manipulation without framework overhead. |
+| **Modular CSS** | Separated core layout styles and specific media queries for better maintainability across multi-page templates. |
+
+## What I'd do differently now
+
+The current desktop-first approach using `max-width` breakpoints made managing responsive overrides across multiple sections complex. I would now implement a mobile-first approach using `min-width` breakpoints, which is more scalable and results in cleaner, more efficient CSS for smaller screens.
 
 ## Technologies Used
 
-- **HTML**: Provides the structure of the website.
-- **CSS**: Styles the website for a polished look and responsive design.
-- **JavaScript**: Adds interactivity and dynamic content.
+- **HTML5**
+- **CSS3** (Flexbox, Grid)
+- **JavaScript** (Vanilla)
+- **Dependencies**: Font Awesome 6.1.1
 
 ## Getting Started
 
-1. **Clone the Repository**: Clone the repository to your local machine using the following command:
+1. **Clone the Repository**: Clone the repository to your local machine:
    ```bash
-   git clone https://github.com/mahmud035/The-BBQ-Place-Restaurant.git
+   git clone git@github.com:mahmud035/the-bbq-place-restaurant.git
    ```
-2. **Open the Project**t: Navigate to the project directory and open the files in your preferred code editor.
+2. **Open the Project**: Navigate to the project directory and open the files in your preferred code editor.
 
-3. **Run the Project**: Open the index.html file in your browser to view the website.
+3. **Run the Project**: Open the `index.html` file in your browser to view the website.
 
 ## Contributing
 
